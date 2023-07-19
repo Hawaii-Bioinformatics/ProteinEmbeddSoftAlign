@@ -1,1 +1,1 @@
-# ProteinEmbeddSoftAlign
+# Soft Alignment of Protein Embeddings 
