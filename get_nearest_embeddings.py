@@ -5,6 +5,7 @@ import torch
 
 emb_dimension = 123
 
+
 def load_into_faiss(embedding_list, with_gpu):
     """
     Load embeddings into faiss index, handle GPU if needed
@@ -24,6 +25,7 @@ def load_into_faiss(embedding_list, with_gpu):
         except:
             print(f'{embedding_file} pt files does not have mean_representations')
     return index
+
 
 def search_against_index(query_embedding_list, index, k, with_gpu):
     """
@@ -49,7 +51,6 @@ def search_against_index(query_embedding_list, index, k, with_gpu):
     return search_results
 
 
-
 if __name__ == '__main__':
 
     # parse command line folder where embeddings are stored
@@ -70,5 +71,3 @@ if __name__ == '__main__':
     for query_embedding_file, results in search_results.items():
         for score, match in results:
             print(query_embedding_file, score, match)
-
-
