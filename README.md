@@ -141,7 +141,7 @@ The notebook `Soft_alignment_cosine_distance_matrix_to_excel.ipynb` illustrates 
 
 The python `xlwings` library is needed to run this notebook. Additionally, Excel should be installed and open before invoking the function `build_excel_sheet`. The output generated will be similar to the following:
 
-![Alt Text](results/soft_align_screenshot.png)
+![Alt Text](soft_align_example_data/results/soft_align_screenshot.png)
 
 
 

@@ -8,6 +8,5 @@ data/
 .DS_Store
 .ipynb_checkpoints/*
 *.pyc
-*.png
 *.txt
 *.pickle
