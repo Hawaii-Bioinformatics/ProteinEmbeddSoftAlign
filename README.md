@@ -42,8 +42,9 @@ seqs = SeqIO.to_dict(SeqIO.parse(os.path.join(fasta_directory, fasta_file), 'fas
 seq_names = list(seqs.keys())
 print(seq_names)
 ```
-    ['YP_006990334.1', 'YP_001468397.1', 'WP_016056174.1']
-
+```
+OUTPUT:  ['YP_006990334.1', 'YP_001468397.1', 'WP_016056174.1']
+```
 
 ```python
 # Create string representations of the sequences being compared
@@ -61,7 +62,9 @@ seq_2_embedding = torch.load(f"{embedding_directory + seq_names[1]}.pt")
 data = get_data_matrix(seq_1_embedding,seq_2_embedding)
 data.iloc[0:5, 0:5]
 ```
-
+```
+OUTPUT:
+```
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -129,8 +132,9 @@ matches = get_matches(seq_1_str, seq_2_str, data)
 longest_path = get_longest_path(data, matches)
 longest_path [0:5]
 ```
-    [(0, 0), (3, 1), (4, 2), (5, 3), (6, 4)]
-
+```
+OUTPUT:  [(0, 0), (3, 1), (4, 2), (5, 3), (6, 4)]
+```
 
 
 ### Soft Alignment in Excel Sheet
