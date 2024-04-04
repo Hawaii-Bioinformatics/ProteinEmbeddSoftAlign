@@ -55,8 +55,8 @@ if __name__ == '__main__':
 
     # parse command line folder where embeddings are stored
     parser = argparse.ArgumentParser()
-    parser.add_argument('--db_embeddings_folder', type=str, default='embeddings')
-    parser.add_argument('--query_embeddings_folder', type=str, default='embeddings')
+    parser.add_argument('--db_embeddings_folder', type=str)
+    parser.add_argument('--query_embeddings_folder', type=str)
     parser.add_argument('--with_gpu', type=bool, default=False)
 
     args = parser.parse_args()
