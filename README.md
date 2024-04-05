@@ -152,7 +152,7 @@ The python `xlwings` library is needed to run this notebook. Additionally, Excel
 
 ### Using FAISS to Identify Putative Protein Matches
 
-This repository includes a Python script, `get_nearest_embeddings.py`, designed to refine the process of sequence comparison. This script streamlines the identification of sequences most relevant to a given query. By leveraging FAISS, a library for efficient similarity search, get_nearest_embeddings.py allows for the rapid comparison of a query sequence against a database of protein sequence embeddings. This functionality significantly reduces the computational overhead associated with exhaustive sequence comparisons, quickly identifying sequences with the highest potential for meaningful alignments.
+This repository includes a Python script, `get_nearest_embeddings.py`, designed to refine the process of sequence comparison. This script streamlines the identification of sequences most relevant to a given query. By leveraging [FAISS](https://github.com/facebookresearch/faiss), a library for efficient similarity search, `get_nearest_embeddings.py` allows for the rapid comparison of a query sequence against a database of protein sequence embeddings. This functionality significantly reduces the computational overhead associated with exhaustive sequence comparisons, quickly identifying sequences with the highest potential for meaningful alignments.
 
 To run `get_nearest_embeddings.py`, use the command line interface with the following options:
 
